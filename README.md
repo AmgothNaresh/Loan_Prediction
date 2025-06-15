@@ -90,16 +90,16 @@ Each model is evaluated using:
   - Accuracy: ~86%
   - Precision: ~86%
 ### 6. Thoughts on Improving the Model in Future Iterations
- -Try Better Ways to Tune the Model: 
+ - **Try Better Ways to Tune the Model**: 
  Right now, we just used basic grid search to tune AdaBoost. Next time, we can try smarter and faster methods like RandomizedSearchCV, or even advanced tools like Optuna to find better   settings for the model more efficiently.
 
- -Use Multiple Models Together: 
+ - **Use Multiple Models Together**: 
  Instead of relying on just one model, we can combine a few different ones (like Logistic Regression, Random Forest, and XGBoost). This way, we can take advantage of their strengths and  improve overall results using techniques like stacking or voting.
 
- -Fix Any Imbalance in the Data: 
+ - **Fix Any Imbalance in the Data**: 
  If we have a lot more approved loans than rejected ones (or vice versa), it can confuse the model. In future versions, we can fix this by using techniques like SMOTE or adjusting        class weights so the model treats both classes more fairly.
 
- -Smarter Validation Methods: 
+ - **Smarter Validation Methods**: 
  Instead of just using simple cross-validation, we can try methods like StratifiedKFold to make sure each fold has a balanced mix of classes. We can also try nested cross-validation to   get a more accurate picture of how well the model will work on new data.
 
 
